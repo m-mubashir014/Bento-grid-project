@@ -1,0 +1,317 @@
+
+.bento-grid {
+  display: grid;
+  padding: 1rem;
+  gap: 1.5rem; /* Space between cards */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "create hero     hero     schedule"
+    "write  accounts maintain schedule"
+    "write  growth   followers followers";
+}
+
+.create-post {
+  grid-area: create;
+  background-color: #ffefdd;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.ai-content {
+  grid-area: write;
+  background-color: #ffcb6b;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.rating {
+  grid-area: hero; 
+  background-color: #6435e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 2rem;
+}
+.rating-text{
+  font-family: DM Sans;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.speed{
+  color: rgba(255, 193, 48, 0.945);
+}
+
+.create-post-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 30px 22px 0 22px;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.color-text {
+  color: #7650dc;
+}
+
+.create-post-pic {
+  width: 130px;
+  height: auto;
+  margin-left: 22px;
+  margin-top: 20px;
+}
+
+.ai-content-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin: 25px 20px 20px 25px;
+}
+
+.ai-content-pic {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.rating-pic {
+  height: 40px;
+  width: auto;
+  margin-top: 10px;
+}
+.rating-review{
+  font-family: DM Sans;
+  font-size: 15px;
+}
+.manage-accounts{
+  grid-area: accounts;
+  display:flex;
+  flex-direction: column;
+  background-color: #f7f7f9;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  max-width: auto;
+  border-radius: 10px;
+}
+.manage-acc-pic{
+  position: absolute;
+  width: auto;
+  height: 60px;
+  top: 10px;
+  right: -80px;
+}
+.manage-acc-text{
+  font-family: DM sans;
+  font-size: 30px;
+  font-weight: 600px;
+  margin-top: 80px;
+  margin-left: 20px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.schedule{
+  grid-area: schedule;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dacffc;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.schedule-text{
+  font-family: DM Sans ;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  right: 20px;
+  margin: 0;
+}
+.schedule-pic{
+  position: absolute;
+  top: 80px;
+  right: -100px;
+  width: auto;
+  height: 240px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  
+}
+.schedule-optimize{
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-left: 20px;
+  position: absolute;
+  bottom: 0;
+}
+.consistent{
+  grid-area: maintain;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcb6b;
+  overflow: hidden;
+  height: auto;
+  border-radius: 10px;
+  padding: 5px 10px;
+  position: relative;
+}
+.consistent-text{
+ font-family: DM Sans ;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 90px;
+}
+.consistent-pic{
+  position: absolute;
+  width: 230px;
+  bottom:-75px;
+  margin-right: 10px;
+  margin-top: 60px;
+}
+.audience{
+  grid-area: growth;
+  display:flex;
+  flex-direction: column;
+  background-color: #f7f7f9;
+  overflow: hidden;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px 20px;
+  position: relative;
+}
+.audience-percentage{
+  font-family: DM Sans;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+.audience-text{
+  font-family: DM Sans ;
+  font-size: 15px;
+  margin: 0;
+  margin-top: 10px;
+}
+.audience-pic{
+  height: auto;
+  margin-top: 30px;
+}
+.growth{
+  grid-area: followers;
+  display:flex;
+  flex-direction: row;
+  background-color: #6435e6;
+  overflow: hidden;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.growth-pic{
+  height: 200px;
+}
+.growth-text{
+  color: white;
+  font-family: DM sans;
+  font-size: 40px;
+  line-height: 1;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "accounts"
+      "maintain"
+      "schedule"
+      "followers"
+      "growth"
+      "create"
+      "write";
+  }
+
+  .schedule {
+    min-height: 320px;
+    padding-bottom: 60px;
+  }
+  .schedule-pic {
+    position: static;
+    width: 80%;
+    height: auto;
+    margin: 30px auto 20px;
+    display: block;
+  }
+  .schedule-text {
+    position: static; 
+    margin: 20px 20px 0;
+  }
+  .schedule-optimize { 
+    position: static;
+    font-size: 20px;
+    margin: 10px 20px 0px 20px;
+  }
+
+  .manage-accounts {
+    min-height: 180px;
+  }
+  .manage-acc-pic {
+    position: static;
+    align-self: flex-end;
+    margin: 10px;
+  }
+  .manage-acc-text {
+    margin-top: 20px;
+  }
+
+  .consistent{
+    min-height: 250px;
+  }
+  .consistent-pic { 
+    position: absolute;
+    margin-top: 0;
+  }
+  .consistent-text {
+    position: absolute;
+    font-size: 33px;
+    left: 35px;
+    top: 60px;
+  }
+
+  .growth {
+    flex-direction: column;
+    text-align: center;
+  }
+  .growth-text {
+    margin-top: 10px;
+  }
+  .ai-content{
+    padding: 0 0 40px 0;
+  }
+}
